@@ -1,0 +1,1 @@
+# LeanLift Site\n\nLeanLift（薄肌训练计时器）官网源码。静态站，GitHub Pages 托管。\n\nhttps://kelpan0524-cell.github.io 之类占位。
