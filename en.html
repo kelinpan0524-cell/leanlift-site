@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LeanLift — Strength training timer & log that runs entirely on your phone</title>
+<meta name="description" content="No server, your data never leaves the device, bilingual, minimal and distraction-free. Open-source strength training timer & logger.">
+<link rel="icon" href="assets/icon.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#"><img src="assets/icon.png" alt=""> LeanLift</a>
+    <div class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#why">Why different</a>
+      <a href="#download">Download</a>
+      <a href="#faq">FAQ</a>
+      <a class="lang" href="index.html">中文</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-inner">
+    <img class="hero-logo" src="assets/icon.png" alt="LeanLift">
+    <h1>LeanLift</h1>
+    <p class="tagline">A strength training timer &amp; log that runs entirely on your phone</p>
+    <p class="pillars">No server · Data never leaves the device · Chinese &amp; English · Minimal &amp; distraction-free</p>
+    <div class="hero-actions">
+      <a class="btn primary" id="download-btn" href="https://github.com/kelinpan0524-cell/leanlift/releases/latest">
+        ⬇ Download Android APK <span class="ver" id="ver">v?</span>
+      </a>
+      <a class="btn ghost" href="https://github.com/kelinpan0524-cell/leanlift">★ Open source on GitHub (MIT)</a>
+    </div>
+    <p class="note">Android 8.0+ · Free &amp; open source · No ads · No accounts</p>
+  </div>
+</header>
+
+<section id="why" class="section">
+  <h2>Why not another fitness app</h2>
+  <p class="section-sub">The hard part of training is logging consistently and staying focused mid-set. Other apps want your sign-up or your server — LeanLift keeps everything on your phone.</p>
+  <div class="grid four">
+    <div class="card"><div class="emoji">🔌</div><h3>No server</h3><p>Works out of the box. Nothing to host, no sign-up, no pop-ups.</p></div>
+    <div class="card"><div class="emoji">📦</div><h3>On-device data</h3><p>Training data lives in local SQLite. No cloud, no one else's database; export and import are yours.</p></div>
+    <div class="card"><div class="emoji">🧹</div><h3>Distraction-free</h3><p>The training screen shows three things only: current exercise, set target, countdown. Haptics confirm each set.</p></div>
+    <div class="card"><div class="emoji">🌐</div><h3>Bilingual</h3><p>The UI and all 157 exercise guides come in Chinese and English, following the system or switched manually.</p></div>
+  </div>
+  <table class="compare">
+    <thead><tr><th></th><th class="hl">LeanLift</th><th>Cloud / self-hosted</th></tr></thead>
+    <tbody>
+      <tr><td>Server</td><td class="hl">None</td><td>Yours or someone else's</td></tr>
+      <tr><td>Data ownership</td><td class="hl">100% on-device</td><td>Someone else's database</td></tr>
+      <tr><td>Accounts</td><td class="hl">None</td><td>Registration systems</td></tr>
+      <tr><td>Offline</td><td class="hl">Everything works</td><td>Core features need network</td></tr>
+      <tr><td>Cost</td><td class="hl">Free &amp; open source</td><td>Subscriptions / server bills</td></tr>
+    </tbody>
+  </table>
+  <p class="fineprint">Only three optional touchpoints ever use the network: calendar sync, AI features (your key), update checks.</p>
+</section>
+
+<section id="features" class="section alt">
+  <h2>Built for the lean-physique plan</h2>
+  <p class="section-sub">Inspired by Alan Shao's lean-theory: low body fat, training 3× a week, progressive overload — turned into plain, handy tools.</p>
+  <div class="grid three">
+    <div class="card"><div class="emoji">🏋️</div><h3>Distraction-free training</h3><p>Full-screen set logging, automatic rest countdowns that survive lock screens, PR detection, a forgot-to-stop guard, plate math.</p></div>
+    <div class="card"><div class="emoji">📈</div><h3>Progressive overload engine</h3><p>Automatic add/back-off calls, per-set target snapshots, target-vs-actual history, 1RM estimates and weekly/monthly trends.</p></div>
+    <div class="card"><div class="emoji">📖</div><h3>Illustrated guides</h3><p>157 exercises with bilingual form cues, 145 with start/end photos, 14 core lifts with silent demo videos — readable mid-workout.</p></div>
+    <div class="card"><div class="emoji">🤖</div><h3>AI coach (optional)</h3><p>Bring your own API key: conversational plan building, phase reviews, Q&amp;A with your last 8 weeks of real data. OpenAI-compatible, Ollama works.</p></div>
+    <div class="card"><div class="emoji">📊</div><h3>Analytics</h3><p>Weekly/monthly volume·sets·intensity, upper/lower split, muscle heatmaps, workout impressions, body metrics, full CSV/JSON export.</p></div>
+    <div class="card"><div class="emoji">📅</div><h3>Feishu/Lark calendar</h3><p>Training days on your calendar, summaries backfilled after sessions, offline queue — straight to the official API.</p></div>
+  </div>
+</section>
+
+<section class="section shots">
+  <h2>Screenshots</h2>
+  <div class="shot-row">
+    <img src="assets/s2_lift.png" alt="Mid-set">
+    <img src="assets/s3_rest.png" alt="Rest">
+    <img src="assets/s4_history.png" alt="History">
+  </div>
+  <div class="shot-row">
+    <img src="assets/s1_home.png" alt="Today">
+    <img src="assets/s5_rir.png" alt="RIR reminder">
+    <img src="assets/s6_heatmap.png" alt="Muscle heatmap">
+  </div>
+</section>
+
+<section id="download" class="section alt download">
+  <h2>Download</h2>
+  <div class="dl-box">
+    <a class="btn primary big" href="https://github.com/kelinpan0524-cell/leanlift/releases/latest/download/app-release.apk">⬇ Download APK directly</a>
+    <a class="btn ghost big" href="https://github.com/kelinpan0524-cell/leanlift/releases">All releases</a>
+    <p class="note">Android 8.0+ · Overwrite-installing keeps your data · In-app one-tap updates (one-time authorization)</p>
+    <p class="note">iPhone users: Android-only officially; see the <a href="https://github.com/kelinpan0524-cell/leanlift/blob/main/AI-BUILD-GUIDE.md">AI-BUILD-GUIDE</a> to adapt it yourself.</p>
+  </div>
+</section>
+
+<section id="faq" class="section">
+  <h2>FAQ</h2>
+  <div class="faq">
+    <details><summary>Does it really work fully offline?</summary><p>Yes. Training, logging, analytics and plans run locally. The three networked extras (calendar, AI, update checks) are all optional.</p></details>
+    <details><summary>Where is my data stored? How do I move it?</summary><p>Local SQLite on your phone. Settings offers full JSON export/restore and CSV export — copy the archive to move devices.</p></details>
+    <details><summary>Does the AI upload my training data?</summary><p>Only when you actively use an AI feature, and only the needed content (e.g. an 8-week summary) goes directly to the provider you configured. Keys stay on-device; there is no middleman server.</p></details>
+    <details><summary>How do updates work?</summary><p>Settings → App Update, one tap. Or download the latest APK from this page and overwrite-install — data survives.</p></details>
+    <details><summary>What does it cost?</summary><p>Nothing. MIT open source, no ads, no in-app purchases, no analytics.</p></details>
+  </div>
+</section>
+
+<footer class="footer">
+  <p><a href="https://github.com/kelinpan0524-cell/leanlift">GitHub</a> · MIT License · Inspired by <a href="https://x.com/AlanShao111">Alan Shao</a>'s lean-physique theory</p>
+  <p class="fineprint">Exercise photos from free-exercise-db (Unlicense) · Demo videos from the wger community (CC BY-SA 4.0) · Screenshots show demo data</p>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>

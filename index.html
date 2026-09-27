@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LeanLift · 薄肌训练计时器 — 完全跑在你手机上的力量训练记录</title>
+<meta name="description" content="无服务器、数据不出本机、中英双语、极简防分心的开源力量训练计时与记录工具。">
+<link rel="icon" href="assets/icon.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#"><img src="assets/icon.png" alt=""> LeanLift</a>
+    <div class="nav-links">
+      <a href="#features">功能</a>
+      <a href="#why">为什么不同</a>
+      <a href="#download">下载</a>
+      <a href="#faq">常见问题</a>
+      <a class="lang" href="en.html">EN</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-inner">
+    <img class="hero-logo" src="assets/icon.png" alt="LeanLift">
+    <h1>薄肌训练计时器 <span class="en-name">LeanLift</span></h1>
+    <p class="tagline">完全跑在你手机上的力量训练计时与记录</p>
+    <p class="pillars">无服务器 · 数据不出本机 · 中英双语 · 极简防分心</p>
+    <div class="hero-actions">
+      <a class="btn primary" id="download-btn" href="https://github.com/kelinpan0524-cell/leanlift/releases/latest">
+        ⬇ 下载 Android APK <span class="ver" id="ver">v?</span>
+      </a>
+      <a class="btn ghost" href="https://github.com/kelinpan0524-cell/leanlift">★ GitHub 开源（MIT）</a>
+    </div>
+    <p class="note">Android 8.0+ · 免费开源 · 无广告 · 无账号</p>
+  </div>
+</header>
+
+<section id="why" class="section">
+  <h2>为什么不是又一个健身 App</h2>
+  <p class="section-sub">训练最难的不是动作，是坚持记录、练时不分心。别的方案要你注册账号或自建服务器——LeanLift 把一切装进你的手机。</p>
+  <div class="grid four">
+    <div class="card"><div class="emoji">🔌</div><h3>无服务器</h3><p>装完即用，不需要架服务器、不需要注册登录，也没有会员弹窗。</p></div>
+    <div class="card"><div class="emoji">📦</div><h3>数据不出本机</h3><p>训练记录存手机本地 SQLite，不上云、不进别人的数据库，导出导入全在你手里。</p></div>
+    <div class="card"><div class="emoji">🧹</div><h3>极简防分心</h3><p>训练界面只剩三要素：当前动作、本组目标、倒计时。完成一组靠震动确认，不用读屏。</p></div>
+    <div class="card"><div class="emoji">🌐</div><h3>中英双语</h3><p>界面与全部 157 个动作要点都带中英文，跟随系统或手动切换。</p></div>
+  </div>
+  <table class="compare">
+    <thead><tr><th></th><th class="hl">LeanLift</th><th>云端 / 自托管平台</th></tr></thead>
+    <tbody>
+      <tr><td>服务器</td><td class="hl">不需要</td><td>自建或依赖他人</td></tr>
+      <tr><td>数据归属</td><td class="hl">100% 本机</td><td>别人的数据库</td></tr>
+      <tr><td>账号</td><td class="hl">没有</td><td>注册 / 账号系统</td></tr>
+      <tr><td>离线</td><td class="hl">全部功能可用</td><td>核心功能依赖网络</td></tr>
+      <tr><td>费用</td><td class="hl">免费开源</td><td>订阅 / 服务器账单</td></tr>
+    </tbody>
+  </table>
+  <p class="fineprint">联网只有三件事且全部可选：飞书日历、AI 功能（你自己的 Key）、检查更新。</p>
+</section>
+
+<section id="features" class="section alt">
+  <h2>为「薄肌计划」而生</h2>
+  <p class="section-sub">灵感来自邵艾伦的薄肌理论：低体脂 + 每周三练 + 渐进超负荷。App 把这三件事做成了顺手的大白话工具。</p>
+  <div class="grid three">
+    <div class="card"><div class="emoji">🏋️</div><h3>防分心训练</h3><p>全屏大按钮逐组记录、组间自动倒计时（锁屏照常走）、PR 自动检测、忘停表守护、杠铃片速配。</p></div>
+    <div class="card"><div class="emoji">📈</div><h3>渐进超负荷引擎</h3><p>自动判定加/减重量，每组记录「当时目标」，历史直接看目标 vs 实际；1RM 估算与周/月趋势。</p></div>
+    <div class="card"><div class="emoji">📖</div><h3>动作图文解析</h3><p>157 个动作全带中英要点，145 个配起止姿势示范照，14 个核心动作配无声示范视频——训练中也能随时翻出来看。</p></div>
+    <div class="card"><div class="emoji">🤖</div><h3>AI 教练（可选）</h3><p>自配 API Key，对话式排计划、阶段复盘、随时问答；数据包自动附近 8 周真实记录，兼容 OpenAI 接口与本地 Ollama。</p></div>
+    <div class="card"><div class="emoji">📊</div><h3>数据分析</h3><p>周/月容量·组数·强度趋势、上下肢分布、肌群热力图、训练自评、体重腰围体脂、CSV/JSON 全量导出。</p></div>
+    <div class="card"><div class="emoji">📅</div><h3>飞书日历联动</h3><p>训练日自动写日历、练完回填摘要、离线排队补写——手机直连官方接口。</p></div>
+  </div>
+</section>
+
+<section class="section shots">
+  <h2>界面速览</h2>
+  <div class="shot-row">
+    <img src="assets/s2_lift.png" alt="训练中">
+    <img src="assets/s3_rest.png" alt="组间休息">
+    <img src="assets/s4_history.png" alt="历史记录">
+  </div>
+  <div class="shot-row">
+    <img src="assets/s1_home.png" alt="今日">
+    <img src="assets/s5_rir.png" alt="余力提醒">
+    <img src="assets/s6_heatmap.png" alt="肌群热力图">
+  </div>
+</section>
+
+<section id="download" class="section alt download">
+  <h2>下载</h2>
+  <div class="dl-box">
+    <a class="btn primary big" href="https://github.com/kelinpan0524-cell/leanlift/releases/latest/download/app-release.apk">⬇ 直接下载 APK</a>
+    <a class="btn ghost big" href="https://github.com/kelinpan0524-cell/leanlift/releases">查看全部版本</a>
+    <p class="note">Android 8.0+ · 覆盖安装不丢数据 · App 内可一键更新（首次授权一次）</p>
+    <p class="note">iPhone 用户：官方只出 Android，按 <a href="https://github.com/kelinpan0524-cell/leanlift/blob/main/AI-BUILD-GUIDE.md">AI-BUILD-GUIDE</a> 可自行适配。</p>
+  </div>
+</section>
+
+<section id="faq" class="section">
+  <h2>常见问题</h2>
+  <div class="faq">
+    <details><summary>真的完全离线也能用吗？</summary><p>是。训练、记录、统计、计划全部本地运行。联网的三件事（飞书日历、AI、检查更新）都不配也能正常用。</p></details>
+    <details><summary>我的数据存在哪？怎么搬家？</summary><p>手机本地 SQLite。设置里有 JSON 全量导出/一键恢复，CSV 也能导。换手机拷一份存档即可。</p></details>
+    <details><summary>AI 功能会上传我的训练数据吗？</summary><p>只有你主动用 AI 功能时，把需要的内容（如近 8 周记录摘要）直接发给你配置的服务商。Key 存本机，无中转服务器。</p></details>
+    <details><summary>怎么更新 App？</summary><p>App 内「设置 → 应用更新」一键升级；或从本页下载最新 APK 覆盖安装，数据不丢。</p></details>
+    <details><summary>要钱吗？</summary><p>不要。MIT 开源，无广告无内购无统计。</p></details>
+  </div>
+</section>
+
+<footer class="footer">
+  <p><a href="https://github.com/kelinpan0524-cell/leanlift">GitHub</a> · MIT License · 灵感来自 <a href="https://x.com/AlanShao111">@邵艾伦</a> 的薄肌理论</p>
+  <p class="fineprint">动作图片来自 free-exercise-db（Unlicense）· 示范视频来自 wger 社区（CC BY-SA 4.0）· 界面截图为模拟数据</p>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>
