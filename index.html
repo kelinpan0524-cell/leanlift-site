@@ -15,7 +15,8 @@
     <a class="brand" href="#"><img src="assets/icon.png" alt=""> LeanLift</a>
     <div class="nav-links">
       <a href="#features">功能</a>
-      <a href="#why">为什么不同</a>
+      <a href="#ai">AI</a>
+      <a href="#vs-opengym">对比 openGym</a>
       <a href="#download">下载</a>
       <a href="#faq">常见问题</a>
       <a class="lang" href="en.html">EN</a>
@@ -65,13 +66,46 @@
   <h2>为「薄肌计划」而生</h2>
   <p class="section-sub">灵感来自邵艾伦的薄肌理论：低体脂 + 每周三练 + 渐进超负荷。App 把这三件事做成了顺手的大白话工具。</p>
   <div class="grid three">
-    <div class="card"><div class="emoji">🏋️</div><h3>防分心训练</h3><p>全屏大按钮逐组记录、组间自动倒计时（锁屏照常走）、PR 自动检测、忘停表守护、杠铃片速配。</p></div>
-    <div class="card"><div class="emoji">📈</div><h3>渐进超负荷引擎</h3><p>自动判定加/减重量，每组记录「当时目标」，历史直接看目标 vs 实际；1RM 估算与周/月趋势。</p></div>
-    <div class="card"><div class="emoji">📖</div><h3>动作图文解析</h3><p>157 个动作全带中英要点，145 个配起止姿势示范照，14 个核心动作配无声示范视频——训练中也能随时翻出来看。</p></div>
-    <div class="card"><div class="emoji">🤖</div><h3>AI 教练（可选）</h3><p>自配 API Key，对话式排计划、阶段复盘、随时问答；数据包自动附近 8 周真实记录，兼容 OpenAI 接口与本地 Ollama。</p></div>
-    <div class="card"><div class="emoji">📊</div><h3>数据分析</h3><p>周/月容量·组数·强度趋势、上下肢分布、肌群热力图、训练自评、体重腰围体脂、CSV/JSON 全量导出。</p></div>
+    <div class="card"><div class="emoji">🏋️</div><h3>防分心训练</h3><p>全屏大按钮逐组记录、组间自动倒计时（锁屏照常走）、PR 自动检测、忘停表守护、杠铃片速配、疼痛标记；忙的时候「只有 20 分钟」精简练。</p></div>
+    <div class="card"><div class="emoji">📈</div><h3>渐进超负荷引擎</h3><p>自动判定加/减重量，每组目标旁写着「为什么」；训练块自动减载、停练两周回归自动降档、平台期给出减载/换变式/加重三条路。</p></div>
+    <div class="card"><div class="emoji">🧭</div><h3>每周复盘教练</h3><p>每周日本地通知：本周完成度、进步与停滞动作、没练到的肌群、体重节奏和一条行动建议——不配 AI 也完整可用。</p></div>
+    <div class="card"><div class="emoji">📖</div><h3>动作图文解析</h3><p>186 个动作全带中英要点，175 个配起止姿势示范照，14 个核心动作配无声示范视频——训练中也能随时翻出来看。</p></div>
+    <div class="card"><div class="emoji">❤️</div><h3>蓝牙心率直连</h3><p>标准 BLE 心率带即插即用：休息页实时心率、偏高自动提醒多休、点开看本次消耗卡路里与心率曲线，练完可让 AI 解析。</p></div>
+    <div class="card"><div class="emoji">📊</div><h3>数据分析</h3><p>周/月容量·组数·强度趋势、活动热力图、1RM 与相对力量、肌群每周组数目标、恢复度热力图、体重腰围体脂、kg/lb 一键切换。</p></div>
+    <div class="card"><div class="emoji">🤖</div><h3>AI 适配（特色）</h3><p>自配 Key：对话式排计划、AI 教练带 8 周真实记录、每周自动 AI 周报、心率 AI 解析；电脑上的 AI 还能经局域网只读桥直接读你的训练数据。详见下方 AI 章节。</p></div>
+    <div class="card"><div class="emoji">💾</div><h3>自动本地备份</h3><p>每次练完自动留快照（近 7 天每日 + 4 周每周），恢复前可预览；超 14 天没手动导出会轻声提醒。CSV/JSON 全量导出照旧。</p></div>
     <div class="card"><div class="emoji">📅</div><h3>飞书日历联动</h3><p>训练日自动写日历、练完回填摘要、离线排队补写——手机直连官方接口。</p></div>
   </div>
+</section>
+
+<section id="ai" class="section">
+  <h2>AI 适配：可选，但一接上就很强</h2>
+  <p class="section-sub">AI 在 LeanLift 里是「放大器」不是「地基」：不配 Key，上面所有功能照常用；配了 Key（OpenAI 兼容接口，本地 Ollama 也行），它就长在你自己的数据上。</p>
+  <div class="grid four">
+    <div class="card"><div class="emoji">💬</div><h3>对话式排计划</h3><p>像聊天一样说需求、随时改（「周三没空，挪一天」），AI 每轮给完整计划，满意后逐动作确认才落库。</p></div>
+    <div class="card"><div class="emoji">📋</div><h3>AI 教练</h3><p>自动附上近 8 周真实训练记录与自评趋势，一键阶段复盘、随时问答；人设里写死「不诊断伤病、不给忍痛练方案」。</p></div>
+    <div class="card"><div class="emoji">📰</div><h3>每周 AI 周报</h3><p>本地周复盘生成后，可选让 AI 把它写成一段人话，随每周通知一起看。前台生成一次、绝不后台联网，没配 Key 自动回退本地版。</p></div>
+    <div class="card"><div class="emoji">🖥️</div><h3>电脑 AI 读你的数据</h3><p>局域网只读桥（MCP）：家里 Wi-Fi 内，Claude/Cursor 直接读手机里的训练记录问「我卧推是不是停滞了」。配对一次、只读、数据不出局域网。</p></div>
+  </div>
+  <p class="fineprint">Key 只存手机本地，请求直连你选的服务商，无中转服务器。</p>
+</section>
+
+<section id="vs-opengym" class="section alt">
+  <h2>和 openGym 有什么不同</h2>
+  <p class="section-sub">openGym（DuarteSantos8/openGym）是我们尊重的同路线项目：数据自持、自托管、练什么肌群一目了然——LeanLift 数据页的部分统计口径也借鉴了它。但两者的「数据自持」落在不同的地方，使用画面也因此完全不同。</p>
+  <table class="compare">
+    <thead><tr><th></th><th class="hl">LeanLift</th><th>openGym（自托管）</th></tr></thead>
+    <tbody>
+      <tr><td>部署</td><td class="hl">不需要：装上就用</td><td>需要一台服务器 / NAS 并自己部署维护</td></tr>
+      <tr><td>使用端</td><td class="hl">Android App，为「练的时候举着手机」设计</td><td>浏览器</td></tr>
+      <tr><td>练中体验</td><td class="hl">全屏防分心三要素、锁屏倒计时、勿扰、震动确认</td><td>网页表单记录为主</td></tr>
+      <tr><td>教练逻辑</td><td class="hl">渐进超负荷引擎 + 训练块减载 + 停练回归 + 每周复盘</td><td>记录与统计为主，训练法靠计划模板</td></tr>
+      <tr><td>AI</td><td class="hl">可选自带：排计划 / 教练 / 周报 / 心率解析 / 局域网只读桥</td><td>无内置 AI</td></tr>
+      <tr><td>数据自持</td><td class="hl">100% 在手机本地 + 自动备份 + 全量导出</td><td>100% 在你自己的服务器</td></tr>
+      <tr><td>生态</td><td class="hl">飞书日历联动、中英双语、蓝牙心率直连</td><td>可从 FitNotes / Strong / Hevy 导入</td></tr>
+    </tbody>
+  </table>
+  <p class="fineprint">一句话：openGym 是「自己服务器上的训练档案」，LeanLift 是「口袋里的教练」——如果你想要零部署、练中不分心、还有个懂你数据的 AI，选 LeanLift。</p>
 </section>
 
 <section class="section shots">
@@ -101,9 +135,10 @@
 <section id="faq" class="section">
   <h2>常见问题</h2>
   <div class="faq">
-    <details><summary>真的完全离线也能用吗？</summary><p>是。训练、记录、统计、计划全部本地运行。联网的三件事（飞书日历、AI、检查更新）都不配也能正常用。</p></details>
-    <details><summary>我的数据存在哪？怎么搬家？</summary><p>手机本地 SQLite。设置里有 JSON 全量导出/一键恢复，CSV 也能导。换手机拷一份存档即可。</p></details>
-    <details><summary>AI 功能会上传我的训练数据吗？</summary><p>只有你主动用 AI 功能时，把需要的内容（如近 8 周记录摘要）直接发给你配置的服务商。Key 存本机，无中转服务器。</p></details>
+    <details><summary>真的完全离线也能用吗？</summary><p>是。训练、记录、统计、计划、周复盘、自动备份全部本地运行。联网的三件事（飞书日历、AI、检查更新）都不配也能正常用。</p></details>
+    <details><summary>我的数据存在哪？怎么搬家？</summary><p>手机本地 SQLite。App 每次练完自动留快照（近 7 天 + 4 周），设置里还有 JSON 全量导出/一键恢复，CSV 也能导。换手机拷一份存档即可。</p></details>
+    <details><summary>AI 功能会上传我的训练数据吗？</summary><p>只有你主动用 AI 功能时，把需要的内容（如近 8 周记录摘要）直接发给你配置的服务商。Key 存本机，无中转服务器；每周 AI 周报默认关闭、打开后也只在前台生成一次。</p></details>
+    <details><summary>和 openGym 该怎么选？</summary><p>想零部署、练中防分心、要渐进超负荷引擎和可选 AI——选 LeanLift；已有 NAS/服务器、想在浏览器里管理训练档案、需要从 FitNotes/Strong/Hevy 迁移历史——openGym 也很好。</p></details>
     <details><summary>怎么更新 App？</summary><p>App 内「设置 → 应用更新」一键升级；或从本页下载最新 APK 覆盖安装，数据不丢。</p></details>
     <details><summary>要钱吗？</summary><p>不要。MIT 开源，无广告无内购无统计。</p></details>
   </div>

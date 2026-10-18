@@ -15,7 +15,8 @@
     <a class="brand" href="#"><img src="assets/icon.png" alt=""> LeanLift</a>
     <div class="nav-links">
       <a href="#features">Features</a>
-      <a href="#why">Why different</a>
+      <a href="#ai">AI</a>
+      <a href="#vs-opengym">vs openGym</a>
       <a href="#download">Download</a>
       <a href="#faq">FAQ</a>
       <a class="lang" href="index.html">中文</a>
@@ -65,13 +66,46 @@
   <h2>Built for the lean-physique plan</h2>
   <p class="section-sub">Inspired by Alan Shao's lean-theory: low body fat, training 3× a week, progressive overload — turned into plain, handy tools.</p>
   <div class="grid three">
-    <div class="card"><div class="emoji">🏋️</div><h3>Distraction-free training</h3><p>Full-screen set logging, automatic rest countdowns that survive lock screens, PR detection, a forgot-to-stop guard, plate math.</p></div>
-    <div class="card"><div class="emoji">📈</div><h3>Progressive overload engine</h3><p>Automatic add/back-off calls, per-set target snapshots, target-vs-actual history, 1RM estimates and weekly/monthly trends.</p></div>
-    <div class="card"><div class="emoji">📖</div><h3>Illustrated guides</h3><p>157 exercises with bilingual form cues, 145 with start/end photos, 14 core lifts with silent demo videos — readable mid-workout.</p></div>
-    <div class="card"><div class="emoji">🤖</div><h3>AI coach (optional)</h3><p>Bring your own API key: conversational plan building, phase reviews, Q&amp;A with your last 8 weeks of real data. OpenAI-compatible, Ollama works.</p></div>
-    <div class="card"><div class="emoji">📊</div><h3>Analytics</h3><p>Weekly/monthly volume·sets·intensity, upper/lower split, muscle heatmaps, workout impressions, body metrics, full CSV/JSON export.</p></div>
+    <div class="card"><div class="emoji">🏋️</div><h3>Distraction-free training</h3><p>Full-screen set logging, automatic rest countdowns that survive lock screens, PR detection, a forgot-to-stop guard, plate math, pain notes, and a 20-minute short session for busy days.</p></div>
+    <div class="card"><div class="emoji">📈</div><h3>Progressive overload engine</h3><p>Automatic add/back-off calls with a written "why" next to every target; training blocks auto-deload, comebacks after 2+ weeks off start at 85%, and plateaus get three clear exits.</p></div>
+    <div class="card"><div class="emoji">🧭</div><h3>Weekly recap coach</h3><p>A Sunday notification with completion, progressing and stalling lifts, neglected muscles, body-weight pace and one action — fully functional without AI.</p></div>
+    <div class="card"><div class="emoji">📖</div><h3>Illustrated guides</h3><p>186 exercises with bilingual form cues, 175 with start/end photos, 14 core lifts with silent demo videos — readable mid-workout.</p></div>
+    <div class="card"><div class="emoji">❤️</div><h3>Bluetooth heart rate</h3><p>Any standard BLE strap just works: live HR on rest screens, a nudge to rest longer when it's still high, tap for calories burned and the HR curve, AI analysis after the session.</p></div>
+    <div class="card"><div class="emoji">📊</div><h3>Analytics</h3><p>Weekly/monthly volume·sets·intensity, activity heatmap, 1RM and strength-to-weight, weekly per-muscle set targets, recovery heatmaps, body metrics, kg/lb switch.</p></div>
+    <div class="card"><div class="emoji">🤖</div><h3>AI, done right (signature)</h3><p>Bring your own key: conversational plan building, a coach over 8 weeks of real data, automatic weekly AI reports, HR analysis — plus a LAN read-only bridge so desktop AI can query your phone. See the AI section below.</p></div>
+    <div class="card"><div class="emoji">💾</div><h3>Automatic local backups</h3><p>A snapshot after every workout (7 daily + 4 weekly), restore with preview, a gentle nudge after 14 days without a manual export. Full CSV/JSON export as before.</p></div>
     <div class="card"><div class="emoji">📅</div><h3>Feishu/Lark calendar</h3><p>Training days on your calendar, summaries backfilled after sessions, offline queue — straight to the official API.</p></div>
   </div>
+</section>
+
+<section id="ai" class="section">
+  <h2>AI: optional, but powerful once connected</h2>
+  <p class="section-sub">AI is an amplifier, not a foundation: without a key everything above works as-is. Add an OpenAI-compatible key (local Ollama works too) and it grows on top of your own data.</p>
+  <div class="grid four">
+    <div class="card"><div class="emoji">💬</div><h3>Conversational planning</h3><p>Chat your requirements, change them any time ("move Wednesday"), get the full plan every turn — nothing lands in the app until you confirm exercise by exercise.</p></div>
+    <div class="card"><div class="emoji">📋</div><h3>AI coach</h3><p>Automatically carries your last 8 weeks of real training and impressions into one-tap phase reviews and Q&amp;A. Its persona is hard-wired to never diagnose injuries or suggest training through pain.</p></div>
+    <div class="card"><div class="emoji">📰</div><h3>Weekly AI report</h3><p>After the local recap is built, optionally have AI turn it into prose, delivered with the weekly notification. Generated once in the foreground — never in the background; falls back to local without a key.</p></div>
+    <div class="card"><div class="emoji">🖥️</div><h3>Desktop AI reads your data</h3><p>A LAN read-only bridge (MCP): on your home Wi-Fi, Claude/Cursor can query the phone directly — "is my bench stalling?" Paired once, read-only, data never leaves your LAN.</p></div>
+  </div>
+  <p class="fineprint">Keys stay on-device; requests go straight to the provider you choose. No middleman server.</p>
+</section>
+
+<section id="vs-opengym" class="section alt">
+  <h2>How it differs from openGym</h2>
+  <p class="section-sub">openGym (DuarteSantos8/openGym) is a project we respect on the same side: self-hosted, your data, clear per-muscle views — parts of LeanLift's analytics borrow its ideas. But the two put "data ownership" in different places, and the day-to-day picture differs completely.</p>
+  <table class="compare">
+    <thead><tr><th></th><th class="hl">LeanLift</th><th>openGym (self-hosted)</th></tr></thead>
+    <tbody>
+      <tr><td>Deployment</td><td class="hl">None: install and train</td><td>Needs a server / NAS you deploy and maintain</td></tr>
+      <tr><td>Client</td><td class="hl">Android app designed for "phone in hand mid-set"</td><td>Browser</td></tr>
+      <tr><td>In-workout</td><td class="hl">Full-screen three-element focus, lock-screen countdowns, DND, haptics</td><td>Mostly web-form logging</td></tr>
+      <tr><td>Coaching</td><td class="hl">Overload engine + blocks/deload + comeback taper + weekly recap</td><td>Logging &amp; analytics first; training method via templates</td></tr>
+      <tr><td>AI</td><td class="hl">Optional built-in: planning / coach / weekly report / HR analysis / LAN bridge</td><td>No built-in AI</td></tr>
+      <tr><td>Data ownership</td><td class="hl">100% on the phone + auto backups + full export</td><td>100% on your own server</td></tr>
+      <tr><td>Ecosystem</td><td class="hl">Lark calendar, bilingual, BLE heart rate</td><td>Import from FitNotes / Strong / Hevy</td></tr>
+    </tbody>
+  </table>
+  <p class="fineprint">One line: openGym is a training archive on your own server; LeanLift is a coach in your pocket — zero deployment, focus mid-set, and an AI that knows your data.</p>
 </section>
 
 <section class="section shots">
@@ -101,9 +135,10 @@
 <section id="faq" class="section">
   <h2>FAQ</h2>
   <div class="faq">
-    <details><summary>Does it really work fully offline?</summary><p>Yes. Training, logging, analytics and plans run locally. The three networked extras (calendar, AI, update checks) are all optional.</p></details>
-    <details><summary>Where is my data stored? How do I move it?</summary><p>Local SQLite on your phone. Settings offers full JSON export/restore and CSV export — copy the archive to move devices.</p></details>
-    <details><summary>Does the AI upload my training data?</summary><p>Only when you actively use an AI feature, and only the needed content (e.g. an 8-week summary) goes directly to the provider you configured. Keys stay on-device; there is no middleman server.</p></details>
+    <details><summary>Does it really work fully offline?</summary><p>Yes. Training, logging, analytics, plans, the weekly recap and auto backups all run locally. The three networked extras (calendar, AI, update checks) are all optional.</p></details>
+    <details><summary>Where is my data stored? How do I move it?</summary><p>Local SQLite on your phone. A snapshot is saved after every workout (7 daily + 4 weekly), and Settings offers full JSON export/restore and CSV export — copy the archive to move devices.</p></details>
+    <details><summary>Does the AI upload my training data?</summary><p>Only when you actively use an AI feature, and only the needed content (e.g. an 8-week summary) goes directly to the provider you configured. Keys stay on-device; there is no middleman server. The weekly AI report is off by default and, once enabled, generated once in the foreground.</p></details>
+    <details><summary>LeanLift or openGym?</summary><p>Want zero deployment, focus mid-set, an overload engine and optional AI — LeanLift. Already running a NAS/server, prefer browser management, or migrating from FitNotes/Strong/Hevy — openGym is great too.</p></details>
     <details><summary>How do updates work?</summary><p>Settings → App Update, one tap. Or download the latest APK from this page and overwrite-install — data survives.</p></details>
     <details><summary>What does it cost?</summary><p>Nothing. MIT open source, no ads, no in-app purchases, no analytics.</p></details>
   </div>
