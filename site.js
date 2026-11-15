@@ -5,12 +5,16 @@
     const r = await fetch(
       'https://api.github.com/repos/kelinpan0524-cell/leanlift/releases/latest',
       { headers: { Accept: 'application/vnd.github+json' } });
-    if (!r.ok) return;
+    if (!r.ok) {
+      document.querySelectorAll('#ver').forEach((el) => el.remove());
+      return;
+    }
     const j = await r.json();
     const name = j.tag_name || '';
     if (!name) return;
     document.querySelectorAll('#ver').forEach((el) => {
       el.textContent = name;
+      el.hidden = false;
     });
   } catch (_) {
     document.querySelectorAll('#ver').forEach((el) => el.remove());
